@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+    overflow-x: hidden;
+}
 body {
     background-color: rgb(211, 248, 223);
 }
@@ -20,6 +23,26 @@ body {
     justify-content: center;
     align-items: center;
 }
+@media only screen and (max-width: 600px) {
+    .app-container {
+        width: 100vw;
+        flex-direction: column;
+    }
+    .content, .board {
+        width: 100%;
+    }
+    div.buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    div.timer-container {
+        order: 2;
+    }
+    .buttons button {
+        padding: 2px 20px!important;
+    }
+}
+
 h1 {
     font-family: fantasy;
     font-size: 4rem;
