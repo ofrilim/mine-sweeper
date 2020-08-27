@@ -1,4 +1,4 @@
-console.log('Playing Mine Sweeper');
+console.log('Playing Minesweeper');
 
 const MINE = '&#x1f4a3;';
 const FLAG = '&#128681;';
