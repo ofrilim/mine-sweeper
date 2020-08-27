@@ -10,15 +10,17 @@
     <body onload="initGame()" oncontextmenu="return false">
         <h1>Mine Sweeper</h1>
         <div class="app-container">
-            <section class="content">
+            <section>
                 <div class="buttons">
                     <div class="timer-container">
                         <img src="https://img.icons8.com/dotty/50/000000/alarm-on.png"/>
                         <span class="timer"></span>
                     </div>
-                    <button onclick="setLevel(1)" title="Board Size: 4 X 4">Begginner</button>
-                    <button onclick="setLevel(2)" title="Board Size: 8 X 8">Intermidiate</button>
-                    <button onclick="setLevel(3)" title="Board Size: 12 X 12">Advanced</button>
+                    <div class="buttons-container">
+                        <button onclick="setLevel(1)" title="Board Size: 4 X 4">Begginner</button>
+                        <button onclick="setLevel(2)" title="Board Size: 8 X 8">Intermidiate</button>
+                        <button onclick="setLevel(3)" title="Board Size: 12 X 12">Advanced</button>
+                    </div>
                 </div>
             </section>
             <section class="board">

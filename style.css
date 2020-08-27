@@ -7,7 +7,7 @@ html {
     overflow-x: hidden;
 }
 body {
-    background-color: rgb(211, 248, 223);
+    background-color: rgba(248, 192, 213, 0.781);
 }
 .app-container { 
     width: 60vw;
@@ -15,7 +15,7 @@ body {
     margin: 0 auto;
     display: flex;
 }
-.content, .board {
+section, .board {
     width: 50%;
     height: 100%;
     display: flex;
@@ -23,23 +23,26 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 @media only screen and (max-width: 600px) {
     .app-container {
         width: 100vw;
         flex-direction: column;
     }
-    .content, .board {
+    section, .board {
         width: 100%;
     }
-    div.buttons {
+    div.buttons-container {
+        display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
     }
     div.timer-container {
         order: 2;
+        padding: 1rem 0;
     }
-    .buttons button {
-        padding: 2px 20px!important;
+    div.buttons-container button {
+        padding: 0.8em 1.2em;
+        margin: 0.5em;
     }
 }
 
@@ -49,10 +52,9 @@ h1 {
     letter-spacing: 0.1rem;
     text-align: center;
     padding: 2rem;
-    color: rgb(235, 168, 231);
+    color: rgb(119, 218, 218);
     text-shadow: 3px 4px 3px rgb(45, 46, 45);
 }
-
 .game-board {
     background-color: rgb(207, 211, 211);
     border: 2px solid grey;
@@ -89,7 +91,7 @@ td {
 .mineBgc {
     background-color: red;
 }
-.buttons {
+.buttons, .buttons-container {
     display: flex;
     flex-direction: column;
 }
